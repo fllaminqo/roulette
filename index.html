@@ -6,12 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
-    <div class="roulette_container">
-        <div class="main_roulette_container">
+    <div class="wraper">
+        <div class="arrowup"></div>
+        <div class="arrowdown"></div>
+        <div class="window">
+        <ul class="list">
             
+        </ul>
+            <ul class="list" id="mainList">
+                <li><img src="ct.png" alt="1"></li>
+                <li><img src="tt.png" alt="2"></li>
+                <li><img src="ct.png" alt="1"></li>
+                <li><img src="ct.png" alt="1"></li>
+                <li><img src="ct.png" alt="1"></li>
+                <li><img src="ct.png" alt="1"></li>
+                <li><img src="cachepin.png" alt="3"></li>
+                <li><img src="ct.png" alt="1"></li>
+                <li><img src="ct.png" alt="1"></li>
+                <li><img src="ct.png" alt="1"></li>
+                <li><img src="ct.png" alt="1"></li>
+                <li><img src="tt.png" alt="2"></li>
+                <li><img src="ct.png" alt="1"></li>
+                <li><img src="ct.png" alt="1"></li>
+                <li><img src="ct.png" alt="1"></li>
+            </ul>
         </div>
     </div>
+    <div class="unos_container">
+        <input type="number" placeholder="Unesi broj coinsa: " class="unos_coinsa" id="unos_coinsa">
+        <p>Preostalo coinsa: <span id="preostalo">100</span></p>
+        2X<input type="radio" name="pogodak" value="1" id="2puta"/>
+        4X<input type="radio" name="pogodak" value="2" id="4puta"/>
+        10X<input type="radio" name="pogodak" value="3" id="10puta"/>
+    </div>
+    <p style="text-align: center">
+        <button class="button">Pokreni</button>
+        <div class="win">
+            <ul>
+                
+            </ul>
+        </div>
 </body>
 </html>
